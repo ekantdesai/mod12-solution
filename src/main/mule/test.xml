@@ -24,6 +24,7 @@ http://www.mulesoft.org/schema/mule/ftp http://www.mulesoft.org/schema/mule/ftp/
 				<fixed-frequency frequency="10" startDelay="5" timeUnit="SECONDS"/>
 			</scheduling-strategy>
 		</scheduler>
+		<logger level="INFO" doc:name="Logger" doc:id="46e3eca2-81b8-4132-88bb-3f0078ba54b2" />
 		<db:select doc:name="Select" doc:id="a03e022c-c914-4f46-b6bc-23a0ff5488b6" config-ref="Partner1_Database_Configuration">
 			<db:sql >SELECT * FROM Giftcards</db:sql>
 		</db:select>
