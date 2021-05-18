@@ -14,6 +14,7 @@ http://www.mulesoft.org/schema/mule/ftp http://www.mulesoft.org/schema/mule/ftp/
 				<fixed-frequency frequency="60" timeUnit="SECONDS"/>
 			</scheduling-strategy>
 		</scheduler>
+		<logger level="INFO" doc:name="Logger" doc:id="318a8b65-d0ee-49cf-8211-3c8b9542c32d" />
 		<ftp:read doc:name="FTP" doc:id="f6242b03-5c82-4801-9184-58fe4a958ba8" path="test/testfile.csv" config-ref="Partner2_FTP_Config"/>
 		<logger level="INFO" doc:name="Log Payload" doc:id="7b8da061-7c8c-4725-a85c-c6171f458b11" message='#["\nTest file from FTP In-Memory Server :\n" ++ write(payload,"application/csv")]'/>
 	</flow>
